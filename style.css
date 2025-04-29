@@ -1,0 +1,398 @@
+.intro{
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+    width:100%;
+    background-color: #BA97A9;
+    font-size: 25px;
+}
+
+    
+ .intro img{
+    width: 300px;
+    height: 300px;
+    border-radius: 68% 32% 82% 18% / 43% 39% 61% 57%;
+    object-fit: cover;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+
+    
+
+.footer {
+   position:sticky;
+   bottom:0;
+   display: flex;
+   justify-content: center; 
+  
+    width: 100%;
+    background-color: #8090B0;
+    color: rgb(35, 191, 234);
+    
+    height:40px;
+}
+.menu{
+    background-color: #AABBC0;
+    display: flex;
+    position: sticky;
+    justify-content: right;
+    
+    
+}
+body{
+    background-color:#BA97A9;
+}
+ 
+*{
+    margin: 0 ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    box-sizing:border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  button{
+    margin: 15px;
+   height: 2rem;
+   transition: all 0.5s ease;
+    background-color: #373E4F;
+    color: azure;
+    border-radius: 30%;
+  }
+
+  
+  .about{
+    height:800px;
+    font-size: 25px;
+    padding:0 15px 0 15px;
+    text-align: center;
+    
+  }
+  
+  .text{
+    margin:10px 10px 10px 0px;
+    width: 900px;
+  }
+
+
+  .space{
+    height:200px;
+  }
+ 
+  .footer a {
+    margin-top: 7px;
+    margin-right: 15px;
+    font-size: 24px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+     
+  }
+  span{
+    color: rgba(61, 14, 81, 0.551);
+    font-size: 60px;
+    transition: all 0.5s ease;
+  }
+  span:hover{
+    color: rgba(8, 5, 172, 0.39);
+    font-size:50px;
+  }
+
+  button:hover{
+    
+    transform: scale(1.2);   
+
+  }
+  a:hover{
+    transform: scale(1.4);
+    
+  }
+  a{
+    transition: all 0.4s ease;
+
+  }
+   img{
+    transition: all 0.5s ease;
+
+  }
+  .intro img:hover{
+    transform: scale(1.35); 
+    border-radius: 52% 48% 38% 62% / 38% 47% 53% 62%;
+  }
+
+  nav h1{
+    margin:15px 900px 0 0;
+    font-weight: 900;
+    font-size: 25px;
+  }
+  .redi{
+    background-color: transparent;
+    font-weight: 400;
+    color: black;
+    border-color: transparent;
+    transition: all 0.4s ease;
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .redi {
+    text-decoration: none; 
+    position: relative; 
+    display: inline-block; 
+  }
+  
+  .redi::after {
+    content: ''; 
+    position: absolute; /* Position it relative to the parent */
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: #000; 
+    transform: scaleX(0);
+    transform-origin: right; 
+    transition: transform 0.4s ease; 
+  }
+  
+  .redi:hover::after {
+    transform: scaleX(1); 
+    transform-origin: left; 
+    
+  }
+
+  h1 {
+    position: relative; /* Required for positioning the pseudo-element */
+    display: inline-block; /* Ensures the underline applies to the text */
+    text-decoration: none; /* Make sure there's no default underline */
+  }
+  
+  h1::after {
+    content: ''; /* Create an empty pseudo-element */
+    position: absolute; /* Position it relative to the parent */
+    bottom: 0; /* Place it at the bottom of the text */
+    left: 0; /* Initially starts from the left */
+    width: 100%; /* Set the width to match the text */
+    height: 2px; /* Thickness of the underline */
+    background-color: #000; /* Color of the underline */
+    transform: scaleX(0); /* Start with no width (hidden) */
+    transform-origin: right; /* Start the transformation from the right */
+    transition: transform 0.3s ease; /* Smooth transition for the underline */
+  }
+  
+  h1:hover::after {
+    transform: scaleX(1); /* Make the underline expand to full width on hover */
+    transform-origin: left; /* Change the origin of the transformation to the left */
+  }
+  
+  .about a{
+    color: rgba(61, 14, 81, 0.551);
+    font-size: 60px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+
+  }
+  .about a :hover{
+    color: rgba(8, 5, 172, 0.39);
+    font-size:50px;
+
+  }
+  .hori{
+    display:flex;
+    gap:5px;
+    list-style: none;
+    font-size: 0.7em;
+  }
+
+  .skills{
+    height:fit-content;
+    width:fit-content;
+    display:inline-block;
+    margin: 25px 0 0 25px;
+    background-image: contain;
+    border-style: solid;
+    box-shadow:2px 3px 10px blueviolet;
+    transition: all 0.4s ease;
+  }
+    
+  
+  .skills h3{
+    text-align: center;
+  }
+
+  .qualification{
+    height:fit-content;
+    width:fit-content;
+    display:inline-block;
+    margin: 25px 0 0 400px;
+    background-image: contain;
+    border-style: solid;
+    box-shadow:2px 3px 10px blueviolet;
+    transition: all 0.4s ease;
+  }
+    
+  
+  .qualification h3{
+    text-align: center;
+  }
+
+  .skills:hover{
+    box-shadow:3px 4px 20px rgb(140, 5, 5); 
+    transition:0.5s;
+    transform:scale(1.30);
+}
+.qualification:hover{
+  box-shadow:3px 4px 20px rgb(140, 5, 5); 
+  transition:0.5s;
+  transform:scale(1.30);
+}
+marquee:hover{
+  transform: scale(1.5);
+  color:rgba(198, 28, 25, 0.764);
+}
+marquee{
+  transition: all 0.4s ease;
+}
+.projects {
+  text-align: center;
+  
+}
+  
+.simon{
+  height: 250px;
+  width: 250px;
+  border: 4px solid black;
+  margin:20px 30px 20px 30px;
+  border-radius:50%;
+  background-image: url('ss.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.tic{
+  height: 250px;
+  width: 250px;
+  border: 4px solid black;
+  margin:20px 30px 20px 30px;
+  border-radius:50%;
+  background-image: url('download.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.procon{
+  display: flex;
+}
+
+
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+
+  nav h1 {
+    font-size: 18px;
+    margin: 0;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .but button {
+    padding: 5px 10px;
+    font-size: 14px;
+    height: auto;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .intro img {
+    width: 180px;
+    height: 180px;
+    margin: 20px 0;
+    border-radius: 50%;
+  }
+
+  .text {
+    width: 90%;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  span {
+    font-size: 30px;
+  }
+
+  span:hover {
+    font-size: 28px;
+  }
+
+  .about {
+    font-size: 18px;
+    padding: 15px;
+    height: auto;
+  }
+
+  .skills, .qualification {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+    text-align: left;
+  }
+
+  .hori {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 0.9em;
+  }
+
+  .procon {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .simon, .tic {
+    width: 160px;
+    height: 160px;
+    margin: 10px 0;
+  }
+
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    height: auto;
+  }
+
+  .footer a {
+    font-size: 20px;
+    margin: 8px;
+  }
+}
+
+
